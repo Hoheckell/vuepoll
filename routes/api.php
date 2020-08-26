@@ -15,4 +15,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('/poll','API\PollController');
-Route::post('poll/{id}/vote','API\PollController@vote');

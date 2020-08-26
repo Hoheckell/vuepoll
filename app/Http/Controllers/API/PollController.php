@@ -81,19 +81,14 @@ class PollController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
-
-    public function vote($id)
-    {
-        try {
+         try {
             $option = Option::find($id);
             if (empty($option))
                 abort(404);
             $option->votes += 1;
             $option->save();
             return response()->json($option);
-        }catch (\Exception $e){
+         }catch (\Exception $e){
             $ex = new \stdClass();
             $ex->code = $e->getCode();
             $ex->message = $e->getMessage();
@@ -101,6 +96,6 @@ class PollController extends Controller
             $ex->file = $e->getFile();
             return response()->json($ex);
         }
-
     }
+
 }

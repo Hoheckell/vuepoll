@@ -12,8 +12,7 @@ Vue.use(VueRouter);
 
 const routes = [
     {path: '/', component: require('./components/start.vue').default},
-    {path: '/notfound', component: require('./components/notfound.vue').default},
-    {path: '/poll/:id', name:"vote", component: require('./components/show.vue').default},
+    {path: '/poll/:id/vote', name:"vote", component: require('./components/vote.vue').default},
     {path: '/poll/:id/stats', name:"estado", component: require('./components/stats.vue').default},
     {path: '/poll', name:"novo", component: require('./components/novo.vue').default}
 
