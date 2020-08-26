@@ -3,9 +3,10 @@
 ## Requerimentos 
 <p>
  Banco de Dados qualquer um compatível com laravel<br>
- Pacote laravel-ui <br>
+ Pacote laravel-ui (está no proprio laravel) <br>
  Gerenciador de dependencias composer<br>
- npm / Vue / Vue-router<br>
+ npm / Vue / Vue-router
+    br>
  </p>
  <p>
  
