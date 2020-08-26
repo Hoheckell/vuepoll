@@ -40,7 +40,7 @@ s
                 })
             },
            votePoll(){
-                axios.post('/api/poll/'+ this.chosen +'/vote' )
+                axios.put('/api/poll/'+ this.chosen )
                     .then((response)=>{
                         this.$router.push("/poll/"+this.poll.id+"/stats");
                     }).catch(function (error) {
