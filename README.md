@@ -12,6 +12,7 @@
  
  ##Configurações e comandos
  <ol>
+ <li>Após clonar o repositório ,executar comando: composer install ou cmposer update</li>
  <li>Configurar o arquivo <strong>.env</strong> com dados do banco</li>
  <li> Rodar comandos:
  <ul>
